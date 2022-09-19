@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "demodemo",
   "workspaces": [
-    "frontend"
-,
+    "frontend",
     "csm"
   ],
   "scripts": {
     "test": "test",
+    "dev:cms":  "npm run dev --workspace=csm",
     "dev": "npm run dev --workspace=csm & npm run dev --workspace=frontend"
   },
-  
   "author": "",
   "license": "ISC"
 }
